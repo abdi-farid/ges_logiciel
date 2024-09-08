@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="_1_page_home">
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>70</y>
+          <width>361</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Home</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_config_electrique">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="frame_6">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>0</y>
+             <width>201</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Appareils Electriques</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QFrame" name="frame_3">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <layout class="QFormLayout" name="formLayout">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="modLeLabel">
+                     <property name="text">
+                      <string>Modèle</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="modLeLineEdit">
+                     <property name="toolTip">
+                      <string>Entrer le modèle de l'appareil électrique</string>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Modèle (ex :  TV Samsung)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="puissanceLabel">
+                     <property name="text">
+                      <string>Puissance</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QSpinBox" name="puissanceSpinBox">
+                     <property name="toolTip">
+                      <string>Entrer la puissance de l'appareil</string>
+                     </property>
+                     <property name="maximum">
+                      <number>999</number>
+                     </property>
+                     <property name="stepType">
+                      <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="ePPouceLabel">
+                     <property name="text">
+                      <string>EPPouce</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QSpinBox" name="ePPouceSpinBox">
+                     <property name="toolTip">
+                      <string>Entrer le nombre de pouce de l'appareil</string>
+                     </property>
+                     <property name="maximum">
+                      <number>999</number>
+                     </property>
+                     <property name="stepType">
+                      <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="puissanceEnVeilleLabel">
+                     <property name="text">
+                      <string>Puissance en veille</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QSpinBox" name="puissanceEnVeilleSpinBox">
+                     <property name="toolTip">
+                      <string>Entrer le puissance en veille de l'appareil</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QPushButton" name="add_app_elec">
+                   <property name="toolTip">
+                    <string>Ajouter un appareil</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/plus.png</normaloff>:/icons/000000/feather/plus.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="edit_app_elec">
+                   <property name="toolTip">
+                    <string>Mettre à jour un appareil</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/edit.png</normaloff>:/icons/000000/feather/edit.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="clear_app_elec">
+                   <property name="toolTip">
+                    <string>Réinitialiser le formulaire</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/arrow_left.png</normaloff>:/icons/000000/feather/arrow_left.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="del_app_elec">
+                   <property name="toolTip">
+                    <string>Supprimer un appareil</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/trash-2.png</normaloff>:/icons/000000/feather/trash-2.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QTableView" name="tableWidget_app_elec"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_config_gaz">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QFrame" name="frame_7">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>0</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Appareils à gaz</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_8">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QFrame" name="frame_9">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QFrame" name="frame_13">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <layout class="QFormLayout" name="formLayout_2">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="modLeLabel_2">
+                     <property name="text">
+                      <string>Modèle</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="modLeGazLineEdit"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="puissanceLabel_2">
+                     <property name="text">
+                      <string>Puissance</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QSpinBox" name="puissanceGazLineEdit"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="dBitNominalLabel">
+                     <property name="text">
+                      <string>Débit nominal</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QSpinBox" name="dBitNominalGazSpinBox"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_14">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QPushButton" name="add_app_gaz">
+                   <property name="toolTip">
+                    <string>Ajouter un appareil</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/plus.png</normaloff>:/icons/000000/feather/plus.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="edit_app_gaz">
+                   <property name="toolTip">
+                    <string>Mettre à jour un appareil</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/edit.png</normaloff>:/icons/000000/feather/edit.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="clear_app_gaz">
+                   <property name="toolTip">
+                    <string>Réinitialiser le formulaire</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/arrow_left.png</normaloff>:/icons/000000/feather/arrow_left.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="del_app_gaz">
+                   <property name="toolTip">
+                    <string>Supprimer un appareil</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/trash-2.png</normaloff>:/icons/000000/feather/trash-2.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_12">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <widget class="QTableView" name="tableView_app_gaz"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_config_materiaux">
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>221</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>page materiaux</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_1_consommation_elec">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QFrame" name="frame_15">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Consommation electricité</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_16">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_1_consommation_gaz">
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QFrame" name="frame_17">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>8</y>
+             <width>221</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Consommation Gaz</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_18">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame_10">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QFrame" name="frame_19">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <layout class="QFormLayout" name="formLayout_3">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="appareilLabel">
+                     <property name="text">
+                      <string>Appareil</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="appareilGazComboBox">
+                     <property name="minimumSize">
+                      <size>
+                       <width>160</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string>Sélectionner l'appareil</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="nombreAppareilLabel">
+                     <property name="text">
+                      <string>Nombre appareil</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QSpinBox" name="nombreAppareilGazSpinBox">
+                     <property name="toolTip">
+                      <string>Insérer le nombre de cet appareil</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="nombreHeureDUtilisationLabel">
+                     <property name="text">
+                      <string>Nombre Heure d'utilisation</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QSpinBox" name="nombreHeureDUtilisationGazSpinBox">
+                     <property name="toolTip">
+                      <string>Insérer le nombre d'heures d'utilisation de cet appareil</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_20">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QPushButton" name="add_conso_gaz">
+                   <property name="toolTip">
+                    <string>Insérer</string>
+                   </property>
+                   <property name="text">
+                    <string>ADD</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/plus.png</normaloff>:/icons/000000/feather/plus.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="edit_conso_gaz">
+                   <property name="toolTip">
+                    <string>Editer</string>
+                   </property>
+                   <property name="text">
+                    <string>EDIT</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/edit-3.png</normaloff>:/icons/000000/feather/edit-3.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="clear_conso_gaz">
+                   <property name="toolTip">
+                    <string>Réinitialiser le formulaire</string>
+                   </property>
+                   <property name="text">
+                    <string>RESET</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/arrow_left.png</normaloff>:/icons/000000/feather/arrow_left.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="del_conso_gaz">
+                   <property name="toolTip">
+                    <string>Supprimer</string>
+                   </property>
+                   <property name="text">
+                    <string>DEL</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="../Qss/icons/_icons.qrc">
+                     <normaloff>:/icons/000000/feather/trash-2.png</normaloff>:/icons/000000/feather/trash-2.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_21">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <item>
+                  <widget class="QLCDNumber" name="lcdConsommationGaz"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_11">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="QTableView" name="tableView_conso_gaz"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConfiguration">
+    <property name="title">
+     <string>Configuration</string>
+    </property>
+    <widget class="QMenu" name="menuAppareils">
+     <property name="title">
+      <string>Appareils</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/feather/icons/feather/speaker.png</normaloff>:/feather/icons/feather/speaker.png</iconset>
+     </property>
+     <addaction name="action_conf_elec"/>
+     <addaction name="action_conf_gaz"/>
+    </widget>
+    <addaction name="menuAppareils"/>
+    <addaction name="action_conf_materiaux"/>
+    <addaction name="action_conf_climat"/>
+   </widget>
+   <widget class="QMenu" name="menuConsommation">
+    <property name="title">
+     <string>Consommation</string>
+    </property>
+    <addaction name="action_conso_elec"/>
+    <addaction name="action_conso_gaz"/>
+   </widget>
+   <widget class="QMenu" name="menuBesoins">
+    <property name="title">
+     <string>Besoins</string>
+    </property>
+    <addaction name="action_besoin_elec"/>
+    <addaction name="actionbesoin_gaz"/>
+   </widget>
+   <widget class="QMenu" name="menuSolutions">
+    <property name="title">
+     <string>Solutions</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menubloc_4">
+    <property name="title">
+     <string>bloc 4</string>
+    </property>
+   </widget>
+   <addaction name="menuConfiguration"/>
+   <addaction name="menuConsommation"/>
+   <addaction name="menuBesoins"/>
+   <addaction name="menuSolutions"/>
+   <addaction name="menubloc_4"/>
+  </widget>
+  <action name="action_conf_elec">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/feather/icons/feather/loader.png</normaloff>:/feather/icons/feather/loader.png</iconset>
+   </property>
+   <property name="text">
+    <string>Electriques</string>
+   </property>
+  </action>
+  <action name="action_conf_gaz">
+   <property name="text">
+    <string>A Gaz</string>
+   </property>
+  </action>
+  <action name="action_conf_materiaux">
+   <property name="text">
+    <string>Matériaux</string>
+   </property>
+  </action>
+  <action name="action_conf_climat">
+   <property name="text">
+    <string>données climatiques</string>
+   </property>
+  </action>
+  <action name="action_conso_elec">
+   <property name="text">
+    <string>Electricité</string>
+   </property>
+  </action>
+  <action name="action_conso_gaz">
+   <property name="text">
+    <string>Gaz</string>
+   </property>
+  </action>
+  <action name="action_besoin_elec">
+   <property name="text">
+    <string>Electricité</string>
+   </property>
+  </action>
+  <action name="actionbesoin_gaz">
+   <property name="text">
+    <string>Gaz</string>
+   </property>
+  </action>
+  <action name="actionElectricit_3">
+   <property name="text">
+    <string>Electricité</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../Qss/icons/_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

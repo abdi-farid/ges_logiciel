@@ -1,0 +1,32 @@
+{
+  "ShowLogs": true,
+  "QMainWindow": [
+    {
+      "tittle": "GES"
+    }
+  ],
+  "QSettings": [
+    {
+      "ThemeSettings": [
+        {
+          "CustomTheme": [
+            {
+              "Background-color": "#FFFFFF",
+              "Text-color": "#000000",
+              "Accent-color": "#008000",
+              "Icons-color": "#000000",
+              "Theme-name": "Default-theme",
+              "Default-Theme": true
+            }
+          ]
+        }
+      ],
+      "AppSettings": {
+        "OrginizationName": "GES",
+        "ApplicationName": "GES Company",
+        "OrginizationDormain": "GES.org"
+      }
+    }
+  ],
+  "QtBinding": "PyQt6"
+}
